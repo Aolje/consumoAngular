@@ -1,0 +1,17 @@
+<h2>Registro empleado</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label> Nombre del empleado</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="employee.name">
+  </div>
+  <div class="form-group">
+    <label> Edad del empleado</label>
+    <input type="number" class="form-control" name="age" [(ngModel)]="employee.age">
+  </div>
+  <div class="form-group">
+    <label> Email del empleado</label>
+    <input type="email" class="form-control" name="email" [(ngModel)]="employee.email">
+  </div>
+  <hr>
+  <button type="submit" class="btn btn-primary">Agregar Empleado</button>
+</form>

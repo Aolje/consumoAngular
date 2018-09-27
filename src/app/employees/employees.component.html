@@ -1,0 +1,23 @@
+<table class="table table-response table-string">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Email</th>
+      <th>Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.age}}</td>
+      <td>{{employee.email}}</td>
+      <td>
+        <a class="btn btn-deafult" [routerLink]="['/employees', employee.id, 'edit']">Editar</a>
+        <a class="btn btn-deafult">Eliminar</a>
+      </td>
+    </tr>
+  </tbody>
+</table> 
